@@ -66,8 +66,16 @@ html, body {
 }
 
 /* 
- * Rectangle 
- */
+* Rectangle 
+*/
+#barbell-img {
+  position: absolute;
+  top: 155%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
 .rectangle,
 .big-rectangle {
   display: inline-block;
@@ -83,7 +91,9 @@ html, body {
   -o-box-shadow: 4px 4px 0px 0px #dddddd;
   -moz-box-shadow: 4px 4px 0px 0px #dddddd;
   box-shadow: 4px 4px 0px 0px #dddddd;
+  z-index: 2;
 }
+
 
 .rectangle i,
 .big-rectangle img,
@@ -98,6 +108,7 @@ html, body {
   -moz-transform: translate(-50%, -50%) rotate(-45deg);
   -o-transform: translate(-50%, -50%) rotate(-45deg);
   -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  z-index: 2;
 }
 
 .big-rectangle {
@@ -105,6 +116,10 @@ html, body {
   right: auto;
   top: 50%;
   left: 50%;
+  background-image: url('/assets/img/bb.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
   margin: 0 auto;
   width: 230px;
   height: 230px;
@@ -119,7 +134,10 @@ html, body {
   -o-box-shadow: 10px 10px 0px 0px #dddddd;
   -moz-box-shadow: 10px 10px 0px 0px #dddddd;
   box-shadow: 10px 10px 0px 0px #dddddd;
+  z-index: 2;
 }
+
+
 
 .intro {
   
@@ -271,6 +289,8 @@ html, body {
   max-height: 100%;
   object-fit: cover;
 }
+
+
 
 /* HEADER
 ================================================== */
